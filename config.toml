@@ -1,0 +1,155 @@
+baseURL = "https://example.edu"
+languageCode = "en-us"
+title = "Hendrik Cziommer"
+theme = "avicenna"
+googleAnalytics = "UA-1234-6"
+timeout=1000
+
+[params]
+  subtitle= "Diplom Student"
+  interests="Machine Learning - Natural Language Processing - Software Engineering "
+  kaggle="www.kaggled.de"
+
+[[params.affilation]]
+  name = "Technische Universität Dresden"
+  position = "Diplom Student"
+  contact = "hendrik.cziommer@gmx.de"
+
+[[params.social]]
+  name = "GitHub"
+  icon = "github"
+  url = "https://github.com/t0m0ffel"
+
+[[params.social]]
+  name = "LinkedIn"
+  icon = "linkedin"
+  url = "https://www.linkedin.com/in/hendrik-cziommer-759ba2130/"
+
+[[params.social]]
+  name = "CV"
+  icon = "file-text"
+  url = "https://linkedin.com/in/hadisinaee/"
+
+# (German Degree, aquivalent to Bachlor + Master Degree)
+
+[[params.introduction.paragraph]]
+  text="""I am a student of Computer Science based in Dresden, Germany. My
+   """
+[[params.introduction.paragraph]]
+  text=""" Pellentesque nec nam aliquam sem et tortor consequat id porta.
+	Viverra suspendisse potenti nullam ac. Leo vel orci porta non pulvinar neque laoreet.
+	Nulla facilisi nullam vehicula ipsum a arcu. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse.
+	Ullamcorper velit sed ullamcorper morbi tincidunt ornare. Dui sapien eget mi proin sed libero.
+	Quam pellentesque nec nam aliquam sem et tortor consequat id. Aliquet lectus proin nibh nisl.
+  """
+
+
+[[params.projects]]
+	[[params.projects.project]]
+		name = "Chefbot"
+		description  = """Chefbot is a webapplication generating artificial cooking receipes from a list of freely selectable ingridiences.
+		The webapp uses a Vue.js frontend and python based flask backend. The user can select ingridiences and gets a list of matching ingridiences.
+		Matching ing are determined by...
+		The receipe generation is based on deep neural network created with the FairSeq toolkit<br>
+		colobaration project with my friend Anja [LINK].
+		The webapplication is PoC
+
+		"""
+		project_page = "http://deep.cooking/#/"
+		code_link = "https://github.com/t0m0ffel"
+
+ [[params.projects.project]]
+         name = "Cognitive Search in PostgresSQL"
+		description  = """The project included research and implementation of word embedding based queries which can be utelized in
+		PostgresSQL.
+		We used a database containing research papers and a database of movie information.
+		We provided a plugin for PostgresSQL which enables the user to perform queries like this
+        "Select the 10 most similar movies to the movie ’The Godfather’ "
+                        Result: ’The Godfather 2’, ’The Godfather 3’, ’Scarface’, ’Good Fellas’... <br><br>
+        For the implemention I used Facebooks fastText libary for the training of wordebeddings. The maintask of this project
+        was trying different preprocessing stratgies since fastText is designed for texts and not for databases as well as
+        finding the best  hyperparameters. Furthermore, I had use the fastText model in PostgresSQL with a reaseaonbale performance.
+        The presentation of results and a working prototype can be found on GitHub"""
+		insights="Gained Indepth knowldge of word embeddings techniques"
+
+ [[params.projects.project]]
+		name = "Architecture Principles for the Construction of Agile Large Software Systems"
+		description  = """This project was focused on finding principals which can be used to make software architectures more agile
+		Key insigts: """
+
+
+ [[params.projects.project]]
+		name = "Mario Kart"
+		description  = """The goal of the project was to simulate a MarioKart race with physical robots. The robots had to recognie virtual
+		 items and obstacles as well as real ones via proximity sensors.
+		 I mainly focused on the programming of the robots in C as well as building a API for robot controlls in Java.
+ 		 """
+        insights="Improving programming Skills in C and Java as well as learning about converting Signals"
+ [[params.projects.project]]
+		name = "Sysplace"
+		description  = """As virtual reality gains more and more popularity we used C# and the Unity framework to develop
+		an application to view a car, rotate it and change certain visual features such as the color.
+		My focuse was on getting used to Unity and manipulating the model as well as the intgration of android."""
+		insights="Working with 3D Framework and interpersonal skills in an international team"
+
+
+ [[params.projects.project]]
+		name = "Haskell Spellchecker"
+		description  = """This project was based on developing a spellchecker with Haskell. To correct words I used a trie data structure and
+		the minimal edit distance."""
+		insights="Indepth pratice of data structures and algortihmes as well as gaining strong knwoldge in functional programming"
+
+
+[[params.publications]]
+  year="Preprint"
+
+  [[params.publications.paper]]
+    name = "Enim nunc faucibus a pellentesque sit amet porttitor"
+    authors = "Ana Alvardo, William Worthley, __Hadi Sinaee__"
+    dest  = "Helga Zita Journal"
+    link = "https://mypaperishere.com"
+    code_link = "https://thecoderepo.com"
+    blog_link = "https://myblogaboutit.com"
+
+  [[params.publications.paper]]
+    name = "In cursus turpis massa tincidunt dui ut ornare lectus sit"
+    authors = "__Hadi Sinaee__,Les Larkins, Edra Ethier"
+    dest  = "Meklit Katlego Conference"
+    link = "https://mypaperishere.com"
+    code_link = "https://thecoderepo.com"
+    blog_link = "https://myblogaboutit.com"
+
+[[params.publications]]
+  year="2019"
+
+  [[params.publications.paper]]
+		name = "Feugiat sed lectus vestibulum mattis ullamcorper velit sed"
+		authors = "Caroll Comes, __Hadi Sinaee__"
+		dest  = "Udo Madhu Journal"
+		link = "https://mypaperishere.com"
+		code_link = "https://thecoderepo.com"
+		blog_link = ""
+
+  [[params.publications.paper]]
+		name = "Venenatis urna cursus eget nunc. Nam aliquam sem et tortor consequat id porta nibh venenatis"
+		authors = "Les Larkins, Ana Alvardo, __Hadi Sinaee__ "
+		dest  = "Zorka Vita Conference"
+		link = "https://mypaperishere.com"
+		code_link = ""
+		blog_link = "https://myblogaboutit.com"
+
+  [[params.publications.paper]]
+		name = "Aliquet eget sit amet tellus cras adipiscing enim eu turpis"
+		authors = "Les Larkins, __Hadi Sinaee__, Ana Alvardo"
+		dest  = "Lena Randa Conference"
+		link = "https://mypaperishere.com"
+		code_link = ""
+		blog_link = ""
+
+  [[params.publications.paper]]
+		name = "Orci eu lobortis elementum nibh tellus molestie nunc non blandit"
+		authors = "__Hadi Sinaee__, Caroll Comes"
+		dest  = "Thandeka Radhika Conference"
+		link = ""
+		code_link = ""
+		blog_link = ""
