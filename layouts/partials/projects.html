@@ -1,15 +1,14 @@
 <div class="introduction">
-	{{ with .Site.Params.projects }}
-	<h4>Projects</h4>
-	<ul>
-		{{- range $index, $projects_map := .Site.Params.projects -}}
+    <h4>Projects</h4>
+    {{- range $elem_index, $projects := .Site.Params.projects -}}
+    <ul>
 
-		{{ range $elem_index, $project := $projects_map.project }}
-		<li>
-			<a href="{{ $project.project_page }}" class="project"> {{ $project.name }}</a>
+        {{- range $elem_index, $project := $projects.project -}}
+        <li>
+            <a href="{{ $project.project_page }}" class="project"> {{ $project.name }}</a>
 
-			{{ if or ($project.code_link) ($project.blog_link) }}
-			<span class="code_blog">
+            {{ if or ($project.code_link) ($project.blog_link) }}
+            <span class="code_blog">
 				{{ with $project.code_link }}
 				[<a href="{{ . }}">code</a>]
 				{{ end }}
@@ -18,18 +17,32 @@
 				[<a href="{{ . }}">blog</a>]
 				{{ end }}
 			</span>
-			{{ end }}
+            {{ end }}
 
-			{{ with $project.description }}
-			<span class="project_description">
-				{{ . }}
+
+            <span class="expand-container">
+            {{ with $project.description }}
+            <span class="project_description">
+				{{ . | markdownify }}
 			</span>
-			{{ end }}
 
-		</li>
-		{{ end }}
+             {{ with $project.expandable }}
+            <div class="expand-arrow">
+                <i data-feather="chevron-down"></i>
+            </div>
+            {{ end }}
+            {{ end }}
+            </span>
 
-		{{- end -}}
-	</ul>
-	{{ end }}
+            {{ with $project.insights }}
+            <span class="project_description">
+				<span style="font-weight: 400; display: inline">Key Insights:</span> {{ . }}
+			</span>
+            {{ end }}
+
+        </li>
+
+        {{end}}
+    </ul>
+    {{- end -}}
 </div>

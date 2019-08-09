@@ -1,0 +1,23 @@
+<div class="introduction">
+	<h4>Skills</h4>
+
+	{{- range $index, $skills := .Site.Params.skills -}}
+
+	{{ range $elem_index, $skill := $skills.skill }}
+	<h4>{{ $skill.name | markdownify }}</h4>
+	<p>{{ $skill.descr | markdownify }}</p>
+
+
+
+	<ul>
+		{{ range $elems_index, $subskill := $skill.subskill }}
+		<li>
+			{{ $subskill.name | markdownify }} <br>
+			{{ $subskill.descr | markdownify }}
+		</li>
+		{{ end }}
+	</ul>
+
+	{{ end }}
+	{{- end -}}
+</div>

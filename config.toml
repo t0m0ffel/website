@@ -57,25 +57,28 @@ timeout=1000
 		"""
 		project_page = "http://deep.cooking/#/"
 		code_link = "https://github.com/t0m0ffel"
+		expandable=1
 
  [[params.projects.project]]
          name = "Cognitive Search in PostgresSQL"
 		description  = """The project included research and implementation of word embedding based queries which can be utelized in
 		PostgresSQL.
 		We used a database containing research papers and a database of movie information.
-		We provided a plugin for PostgresSQL which enables the user to perform queries like this
-        "Select the 10 most similar movies to the movie ’The Godfather’ "
-                        Result: ’The Godfather 2’, ’The Godfather 3’, ’Scarface’, ’Good Fellas’... <br><br>
+		We provided a plugin for PostgresSQL which enables the user to perform queries like this: <br>
+        <pre><code>Select the 10 most similar movies to the movie ’The Godfather’</code></pre>
+        __Result__: ’The Godfather 2’, ’The Godfather 3’, ’Scarface’, ’Good Fellas’...<br><br>
         For the implemention I used Facebooks fastText libary for the training of wordebeddings. The maintask of this project
         was trying different preprocessing stratgies since fastText is designed for texts and not for databases as well as
         finding the best  hyperparameters. Furthermore, I had use the fastText model in PostgresSQL with a reaseaonbale performance.
         The presentation of results and a working prototype can be found on GitHub"""
 		insights="Gained Indepth knowldge of word embeddings techniques"
+		code_link = "https://github.com/t0m0ffel/postgres-cognitive-intelligence"
+		expandable=1
 
  [[params.projects.project]]
 		name = "Architecture Principles for the Construction of Agile Large Software Systems"
-		description  = """This project was focused on finding principals which can be used to make software architectures more agile
-		Key insigts: """
+		description="""This project was focused on finding principals which can be used to make software architectures more agile"""
+		insights="Gained in depth research expirence with sources"
 
 
  [[params.projects.project]]
@@ -100,56 +103,39 @@ timeout=1000
 		insights="Indepth pratice of data structures and algortihmes as well as gaining strong knwoldge in functional programming"
 
 
-[[params.publications]]
-  year="Preprint"
-
-  [[params.publications.paper]]
-    name = "Enim nunc faucibus a pellentesque sit amet porttitor"
-    authors = "Ana Alvardo, William Worthley, __Hadi Sinaee__"
-    dest  = "Helga Zita Journal"
-    link = "https://mypaperishere.com"
-    code_link = "https://thecoderepo.com"
-    blog_link = "https://myblogaboutit.com"
-
-  [[params.publications.paper]]
-    name = "In cursus turpis massa tincidunt dui ut ornare lectus sit"
-    authors = "__Hadi Sinaee__,Les Larkins, Edra Ethier"
-    dest  = "Meklit Katlego Conference"
-    link = "https://mypaperishere.com"
-    code_link = "https://thecoderepo.com"
-    blog_link = "https://myblogaboutit.com"
-
-[[params.publications]]
-  year="2019"
-
-  [[params.publications.paper]]
-		name = "Feugiat sed lectus vestibulum mattis ullamcorper velit sed"
-		authors = "Caroll Comes, __Hadi Sinaee__"
-		dest  = "Udo Madhu Journal"
-		link = "https://mypaperishere.com"
-		code_link = "https://thecoderepo.com"
-		blog_link = ""
-
-  [[params.publications.paper]]
-		name = "Venenatis urna cursus eget nunc. Nam aliquam sem et tortor consequat id porta nibh venenatis"
-		authors = "Les Larkins, Ana Alvardo, __Hadi Sinaee__ "
-		dest  = "Zorka Vita Conference"
-		link = "https://mypaperishere.com"
-		code_link = ""
-		blog_link = "https://myblogaboutit.com"
-
-  [[params.publications.paper]]
-		name = "Aliquet eget sit amet tellus cras adipiscing enim eu turpis"
-		authors = "Les Larkins, __Hadi Sinaee__, Ana Alvardo"
-		dest  = "Lena Randa Conference"
-		link = "https://mypaperishere.com"
-		code_link = ""
-		blog_link = ""
-
-  [[params.publications.paper]]
-		name = "Orci eu lobortis elementum nibh tellus molestie nunc non blandit"
-		authors = "__Hadi Sinaee__, Caroll Comes"
-		dest  = "Thandeka Radhika Conference"
-		link = ""
-		code_link = ""
-		blog_link = ""
+[[params.skills]]
+	[[params.skills.skill]]
+	    name="Programming"
+	    descr="""Since the 8th grade I started programming at school with Delphi 7. At first I thought it was really boring and complicated,
+	    but after a few weeks and a short look I started to love it and stick to it with great passion until today."""
+	    [[params.skills.skill.subskill]]
+	        name="Python, Pandas, NumPy, Jupyter, Numba, flask, django, PyTorch, Keras, Tensorflow"
+	        descr="""I startet using Python and Tensorflow since 2016 to train simple deep networks. Over time I gained
+	        more and more knwoledge in Python itself as well as the essential frameworks Pandas and Numpy through books
+	        and trial and error. PyTorch is my goto framework for impleting neural networks and calcualtions perfomred on
+	        GPUs throuh its pythonic philosophy, easy debugability and flexibility. I use flask to deploy models to use them
+	        in Webapps.
+	        Latley I am intrested in implementing complex algorithms in python using numba to achieve C like performance,
+	        as well as speed up existing applications at my work place up to ten fold."""
+        [[params.skills.skill.subskill]]
+            name="Java, JavaEE, Spring, Hibernate"
+            descr="""I first got in touch with Java when I was in school and worked on Android applications. In University
+            we learned in deph and I relly enjoyed. It was my goto language for all kinds of programming problems for a long
+            time. During my internship in India I impletet a Webapplication to automate the internal release process using
+            Spring, OracleDB, Hibernate and AngularJS."""
+        [[params.skills.skill.subskill]]
+            name="Haskell"
+            descr="""I learned about Haskell and functional programming in general at university. The lecture also included
+            tranlating Haskell Code to C and Assembler Code. Haskell offers a style to implement algorithms in a very short,
+            mathematical but - when you get used to it - easy to unterstand way. I really appricate the approaches of
+            Java and JavaScript to implement this style to make programms easier to understand."""
+        [[params.skills.skill.subskill]]
+            name="JavaScript/HTML5/CSS3, Vue.js, Angular.js, Vega.js"
+            desr="""During my internships I have used JavaScript in myriad projects using different frameworks such as Angular.js and
+            Vue.js.
+            I used Vega.js which is build on D3 to visulaize word embeddings and build an interactive to plot to navigate
+            through the word space."""
+        [[params.skills.skill.subskill]]
+            name="C/C++"
+        [[params.skills.skill.subskill]]
+            name="PostgresSQL, OracleDB, MySQL"
