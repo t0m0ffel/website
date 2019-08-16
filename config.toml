@@ -131,11 +131,19 @@ timeout=1000
             Java and JavaScript to implement this style to make programms easier to understand."""
         [[params.skills.skill.subskill]]
             name="JavaScript/HTML5/CSS3, Vue.js, Angular.js, Vega.js"
-            desr="""During my internships I have used JavaScript in myriad projects using different frameworks such as Angular.js and
+            descr="""During my internships I have used JavaScript in myriad projects using different frameworks such as Angular.js and
             Vue.js.
-            I used Vega.js which is build on D3 to visulaize word embeddings and build an interactive to plot to navigate
+            I used Vega.js which is build on D3 to visulaize word embeddings and build an interactive plot to navigate
             through the word space."""
         [[params.skills.skill.subskill]]
             name="C/C++"
+            descr="""As fast low-level languages C and C++ are used in a wide varity of fields ranging from robots to
+            machine learning algorithms. In my first semester at university I build a very basic agent playing Nine men's morris.
+            Later I used C to controll robots with Arduino and now I work with starspace and fastText to enhance the quality of
+            word embeddings"""
         [[params.skills.skill.subskill]]
             name="PostgresSQL, OracleDB, MySQL"
+            descr="""Databases are 	ubiquitous  in applications of all kinds. During my work experience I used PostgresSQL
+            to enhance queries by including word embeddings. I also used OracleDB and MySQL to persit data in various
+            webapplications
+            """

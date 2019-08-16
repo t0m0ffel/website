@@ -8,11 +8,10 @@
 	<p>{{ $skill.descr | markdownify }}</p>
 
 
-
 	<ul>
 		{{ range $elems_index, $subskill := $skill.subskill }}
 		<li>
-			{{ $subskill.name | markdownify }} <br>
+			<span class="bold">{{ $subskill.name | markdownify }}</span> <br>
 			{{ $subskill.descr | markdownify }}
 		</li>
 		{{ end }}
