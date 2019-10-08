@@ -44,7 +44,7 @@ __IMPORTANT__
  - copy your CV file in the `static` folder. Set the `cv_name` variable to its full file name.
 
 ```toml
-baseURL = "https://example.edu"
+baseURL = "https://hendrik-cziommer.me"
 languageCode = "en-us"
 title = "Hadi Sinaee"
 theme = "avicenna"
