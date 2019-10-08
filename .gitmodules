@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/t0m0ffel/t0m0ffel.github.io
+	branch = master
