@@ -33,26 +33,32 @@ timeout=1000
 # (German Degree, aquivalent to Bachlor + Master Degree)
 
 [[params.introduction.paragraph]]
-  text="""I am a student of Computer Science based in Dresden, Germany. My
+  text="""I'm a Computer Science student based in Dresden, Germany. In my student job I help to improve the patent application process
+  for the <a href="https://www.dpma.de/english/index.html">German Patent and Trade Mark Office</a> using the latest NLP techniques such
+  as word embeddings. During my job I worked with fastText and sent2vec to embed patents into a vector space and enable patent examiner
+  to determine if ideas are patentable e.g. the idea is not patented already by just transforming the patent application and look at
+  a certain amount of similar patents represented as vectors.
+
+
+
    """
 [[params.introduction.paragraph]]
-  text=""" Pellentesque nec nam aliquam sem et tortor consequat id porta.
-	Viverra suspendisse potenti nullam ac. Leo vel orci porta non pulvinar neque laoreet.
-	Nulla facilisi nullam vehicula ipsum a arcu. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse.
-	Ullamcorper velit sed ullamcorper morbi tincidunt ornare. Dui sapien eget mi proin sed libero.
-	Quam pellentesque nec nam aliquam sem et tortor consequat id. Aliquet lectus proin nibh nisl.
+  text="""I also researched on a ways to navigate through the vector space through an grafical surface.
+  This research project was a collobarion resulting in a <a href="großer_beleg.pdf" target="_blank">paper</a> and
+  <a href="großer_beleg_presentation.pdf" target="_blank">presentation</a>.
+
   """
 
 
 [[params.projects]]
 	[[params.projects.project]]
 		name = "Chefbot"
-		description  = """Chefbot is a webapplication generating artificial cooking receipes from a list of freely selectable ingridiences.
+		description  = """Chefbot is a web application generating artificial cooking receipes from a list of freely selectable ingridiences.
 		The webapp uses a Vue.js frontend and python based flask backend. The user can select ingridiences and gets a list of matching ingridiences.
 		Matching ing are determined by...
 		The receipe generation is based on deep neural network created with the FairSeq toolkit<br>
-		colobaration project with my friend Anja [LINK].
-		The webapplication is PoC
+		coloration project with my friend Anja [LINK].
+		The web application is PoC
 
 		"""
 		project_page = "http://deep.cooking/#/"
@@ -67,9 +73,9 @@ timeout=1000
 		We provided a plugin for PostgresSQL which enables the user to perform queries like this: <br>
         <pre><code>Select the 10 most similar movies to the movie ’The Godfather’</code></pre>
         __Result__: ’The Godfather 2’, ’The Godfather 3’, ’Scarface’, ’Good Fellas’...<br><br>
-        For the implemention I used Facebooks fastText libary for the training of wordebeddings. The maintask of this project
-        was trying different preprocessing stratgies since fastText is designed for texts and not for databases as well as
-        finding the best  hyperparameters. Furthermore, I had use the fastText model in PostgresSQL with a reaseaonbale performance.
+        For the implementation I used Facebooks fastText library for the training of word embeddings. The main task of this project
+        was trying different pre-processing stratgies since fastText is designed for texts and not for databases as well as
+        finding the best  hyper-parameters. Furthermore, I had use the fastText model in PostgresSQL with a reasonable performance.
         The presentation of results and a working prototype can be found on GitHub"""
 		insights="Gained Indepth knowldge of word embeddings techniques"
 		code_link = "https://github.com/t0m0ffel/postgres-cognitive-intelligence"
