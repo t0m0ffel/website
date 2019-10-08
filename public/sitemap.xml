@@ -4,17 +4,14 @@
   
   <url>
     <loc>https://example.edu/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://example.edu/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://example.edu/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
