@@ -1,9 +1,10 @@
-baseURL = "https://hendrik-cziommer.me"
+baseURL = ""
 languageCode = "en-us"
 title = "Hendrik Cziommer"
 theme = "avicenna"
 googleAnalytics = "UA-1234-6"
 timeout=1000
+publishDir="../t0m0ffel.github.io"
 
 [params]
   subtitle= "Diplom Student"
@@ -28,23 +29,23 @@ timeout=1000
 [[params.social]]
   name = "CV"
   icon = "file-text"
-  url = "https://linkedin.com/in/hadisinaee/"
+  url = "cv.pdf"
 
 # (German Degree, aquivalent to Bachlor + Master Degree)
 
 [[params.introduction.paragraph]]
-  text="""I'm a Computer Science student based in Dresden, Germany. In my student job I help to improve the patent application process
+  text="""I'm a Computer Science student based in Dresden, Germany. In my student job, I help to improve the patent application process
   for the <a href="https://www.dpma.de/english/index.html">German Patent and Trade Mark Office</a> using the latest NLP techniques such
-  as word embeddings. During my job I worked with fastText and sent2vec to embed patents into a vector space and enable patent examiner
-  to determine if ideas are patentable e.g. the idea is not patented already by just transforming the patent application and look at
+  as word embeddings. During my job, I worked with fastText and sent2vec to embed patents into a vector space and enable patent examiners
+  to determine if ideas are patentable, e.g. the idea is not patented already by just transforming the patent application and look at
   a certain amount of similar patents represented as vectors.
 
 
 
    """
 [[params.introduction.paragraph]]
-  text="""I also researched on a ways to navigate through the vector space through an grafical surface.
-  This research project was a collobarion resulting in a <a href="großer_beleg.pdf" target="_blank">paper</a> and
+  text="""I also researched on ways to navigate through the vector space through a grafic surface.
+  This research project was developed in cooperation with my university  resulting in a <a href="großer_beleg.pdf" target="_blank">paper</a> and
   <a href="großer_beleg_presentation.pdf" target="_blank">presentation</a>.
 
   """
@@ -53,12 +54,10 @@ timeout=1000
 [[params.projects]]
 	[[params.projects.project]]
 		name = "Chefbot"
-		description  = """Chefbot is a web application generating artificial cooking receipes from a list of freely selectable ingridiences.
-		The webapp uses a Vue.js frontend and python based flask backend. The user can select ingridiences and gets a list of matching ingridiences.
-		Matching ing are determined by...
-		The receipe generation is based on deep neural network created with the FairSeq toolkit<br>
-		coloration project with my friend Anja [LINK].
-		The web application is PoC
+		description  = """Chefbot is a web application generating artificial cooking recipes from a list of freely selectable ingredients.
+		The webapp uses a Vue.js frontend and python based flask backend. The user can select ingredients  and gets a list of matching ingredients.
+		The recipe generation is based on deep neural network created with the FairSeq toolkit.<br>
+		The web application is PoC.
 
 		"""
 		project_page = "http://deep.cooking/#/"
@@ -77,14 +76,14 @@ timeout=1000
         was trying different pre-processing stratgies since fastText is designed for texts and not for databases as well as
         finding the best  hyper-parameters. Furthermore, I had use the fastText model in PostgresSQL with a reasonable performance.
         The presentation of results and a working prototype can be found on GitHub"""
-		insights="Gained Indepth knowldge of word embeddings techniques"
+		insights="Gained in depth knowledge of word embeddings techniques"
 		code_link = "https://github.com/t0m0ffel/postgres-cognitive-intelligence"
 		expandable=1
 
  [[params.projects.project]]
 		name = "Architecture Principles for the Construction of Agile Large Software Systems"
 		description="""This project was focused on finding principals which can be used to make software architectures more agile"""
-		insights="Gained in depth research expirence with sources"
+		insights="Gained in depth research experience with sources"
 
 
  [[params.projects.project]]
@@ -98,7 +97,7 @@ timeout=1000
 		name = "Sysplace"
 		description  = """As virtual reality gains more and more popularity we used C# and the Unity framework to develop
 		an application to view a car, rotate it and change certain visual features such as the color.
-		My focuse was on getting used to Unity and manipulating the model as well as the intgration of android."""
+		My focus was on getting used to Unity and manipulating the model as well as the integration of android."""
 		insights="Working with 3D Framework and interpersonal skills in an international team"
 
 
@@ -106,7 +105,7 @@ timeout=1000
 		name = "Haskell Spellchecker"
 		description  = """This project was based on developing a spellchecker with Haskell. To correct words I used a trie data structure and
 		the minimal edit distance."""
-		insights="Indepth pratice of data structures and algortihmes as well as gaining strong knwoldge in functional programming"
+		insights="Indepth pratice of data structures and algorithms as well as gaining strong knowledge in functional programming"
 
 
 [[params.skills]]
@@ -118,7 +117,7 @@ timeout=1000
 	        name="Python, Pandas, NumPy, Jupyter, Numba, flask, django, PyTorch, Keras, Tensorflow"
 	        descr="""I startet using Python and Tensorflow since 2016 to train simple deep networks. Over time I gained
 	        more and more knwoledge in Python itself as well as the essential frameworks Pandas and Numpy through books
-	        and trial and error. PyTorch is my goto framework for impleting neural networks and calcualtions perfomred on
+	        and trial and error. PyTorch is my goto framework for impleting neural networks and calculations performed on
 	        GPUs throuh its pythonic philosophy, easy debugability and flexibility. I use flask to deploy models to use them
 	        in Webapps.
 	        Latley I am intrested in implementing complex algorithms in python using numba to achieve C like performance,
@@ -127,14 +126,14 @@ timeout=1000
             name="Java, JavaEE, Spring, Hibernate"
             descr="""I first got in touch with Java when I was in school and worked on Android applications. In University
             we learned in deph and I relly enjoyed. It was my goto language for all kinds of programming problems for a long
-            time. During my internship in India I impletet a Webapplication to automate the internal release process using
+            time. During my internship in India I implemented a Webapplication to automate the internal release process using
             Spring, OracleDB, Hibernate and AngularJS."""
         [[params.skills.skill.subskill]]
             name="Haskell"
             descr="""I learned about Haskell and functional programming in general at university. The lecture also included
             tranlating Haskell Code to C and Assembler Code. Haskell offers a style to implement algorithms in a very short,
-            mathematical but - when you get used to it - easy to unterstand way. I really appricate the approaches of
-            Java and JavaScript to implement this style to make programms easier to understand."""
+            mathematical but - when you get used to it - easy to understand way. I really appreciate the approaches of
+            Java and JavaScript to implement this style to make code easier to understand."""
         [[params.skills.skill.subskill]]
             name="JavaScript/HTML5/CSS3, Vue.js, Angular.js, Vega.js"
             descr="""During my internships I have used JavaScript in myriad projects using different frameworks such as Angular.js and
@@ -145,11 +144,11 @@ timeout=1000
             name="C/C++"
             descr="""As fast low-level languages C and C++ are used in a wide varity of fields ranging from robots to
             machine learning algorithms. In my first semester at university I build a very basic agent playing Nine men's morris.
-            Later I used C to controll robots with Arduino and now I work with starspace and fastText to enhance the quality of
+            Later I used C to control robots with Arduino and now I work with starspace and fastText to enhance the quality of
             word embeddings"""
         [[params.skills.skill.subskill]]
             name="PostgresSQL, OracleDB, MySQL"
             descr="""Databases are 	ubiquitous  in applications of all kinds. During my work experience I used PostgresSQL
-            to enhance queries by including word embeddings. I also used OracleDB and MySQL to persit data in various
+            to enhance queries by including word embeddings. I also used OracleDB and MySQL to persist data in various
             webapplications
             """
